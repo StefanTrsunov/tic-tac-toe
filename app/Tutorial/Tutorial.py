@@ -1,3 +1,0 @@
-#if he clicks "Tutorial"
-#we will take him to a website where it explains how to play tic tac toe and how to be good at the game
-#rules, common tactics etc...

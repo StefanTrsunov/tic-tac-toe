@@ -11,7 +11,7 @@ activate the env file:
 $ source env/bin/activate
 
 install the requirements:
-$ pip3 install requirements.txt
+$ pip install -r requirements.txt
 
 the final step is to just run the app:
 $ flask run
