@@ -1,4 +1,16 @@
-#15:30 min into the video
-#https://www.youtube.com/watch?v=Z1RJmh_OqeA
-
-#wow
+#tommorow you will need to call a python func 
+#something like this
+#
+#
+#@app.route('/Tutorial')
+#def tutorial():
+#    return render_template('sites/Tutorial/tutorial.py')
+#                           ('dir_name')
+#
+#and in that file there will be a func that does something
+#or code that does something
+#
+#
+#Try to import a class etc.
+#have fun :D
+#
