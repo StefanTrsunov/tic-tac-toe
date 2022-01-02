@@ -15,10 +15,3 @@ $ pip install -r requirements.txt
 
 the final step is to just run the app:
 $ flask run
-
-
-# Exporting ENV variables
-
-$ export FLASK_APP=wsgi.py
-$ source .env
-$ export $(cut -d= -f1 .env)
