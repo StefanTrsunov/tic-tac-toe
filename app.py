@@ -21,3 +21,6 @@ def PVP():
 @app.route('/Multiplayer')
 def Multiplayer():
     return "this is multiplayer"
+
+if __name__ == 'main':
+    app.run(debug=True)
