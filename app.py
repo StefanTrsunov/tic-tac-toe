@@ -1,5 +1,11 @@
 from flask import Flask, render_template
+#First idea:
 #from sites.Tutorial import tutorial_Site
+
+#Second idea:
+#with open('sites/Tutorial/tutorial.py') as f:
+    #tutorial_site = f.read()
+#this works but the problem is that the print() func prints it as well xD
 
 app = Flask(__name__)
 #app.register_blueprint(tutorial_Site)
@@ -11,8 +17,11 @@ def home():
 @app.route('/Tutorial')
 def tutorial():
     #here it needs to return the tutroial.py file which is in sites/Tutorial/tutorial.py
+    #First idea:
     #return render_template('sites/Tutorial/tutorial.html')
-    return "this is the tutorial"
+    #Second idea:
+    #return tutorial_site
+    return 'This is the tutorial'
 
 @app.route('/PVE')
 def PVE():
