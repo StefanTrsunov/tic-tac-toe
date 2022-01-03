@@ -1,6 +1,8 @@
 from flask import Flask, render_template
+#from sites.Tutorial import tutorial_Site
 
 app = Flask(__name__)
+#app.register_blueprint(tutorial_Site)
 
 @app.route('/')
 def home():
@@ -9,6 +11,7 @@ def home():
 @app.route('/Tutorial')
 def tutorial():
     #here it needs to return the tutroial.py file which is in sites/Tutorial/tutorial.py
+    #return render_template('sites/Tutorial/tutorial.html')
     return "this is the tutorial"
 
 @app.route('/PVE')
