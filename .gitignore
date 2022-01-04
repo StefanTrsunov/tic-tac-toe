@@ -1,32 +1,4 @@
-#02.01.2022
-#You will need to call a python func 
-#something like this
-#
-#
-#@app.route('/Tutorial')
-#def tutorial():
-#    return render_template('sites/Tutorial/tutorial.py')
-#                           ('dir_name')
-#
-#and in that file there will be a func that does something
-#or code that does something
-#
-#
-#Try to import a class etc.
-#
-#
-#
-#03.01.2022
-#Trying to put Blueprints into my project
-#app.py needs to be more clear and less code, more readeable code and more put together
-#
-#For example:
-#from the code inside tutorial.py to be executed in app.py something like this:
-#app.register_blueprint(tutorial_Site)
-#
-#My plan is:
-#In every .py files in sites folder to have something like that to be called by a Blueprints so that 
-#app.py can have less code
-#or in those .py files to be a func that gets executed
+#04.01.2022
+#USE JINJA 2
 #
 #

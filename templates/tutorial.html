@@ -7,10 +7,11 @@
     <title>Tutorial</title>
 </head>
 <body>
-    <indent>
-        <% for i in range(10):
-            data= '%s * %s' %(i,i) %>
-            <b> <%= i*i %> </b>
-    </indent>
+    <h1>Members</h1>
+<ul>
+{% for i in range(10)%}
+  <li>{{ i }}</li>
+{% endfor %}
+</ul>
 </body>
 </html>
