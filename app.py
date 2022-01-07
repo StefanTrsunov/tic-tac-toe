@@ -9,21 +9,19 @@ def home():
 
 @app.route('/Tutorial')
 def tutorial():
-
-    return render_template('tutorial.html') 
-    #return 'This is the tutorial'
+    return render_template('Tutorial/tutorial.html') 
 
 @app.route('/PVE')
 def PVE():
-    return "this is the pve"
+    return render_template('PVE/pve.html')
 
 @app.route('/PVP')
 def PVP():
-    return "this is the pvp"
+    return render_template('PVP/pvp.html')
 
 @app.route('/Multiplayer')
 def Multiplayer():
-    return "this is multiplayer"
+    return render_template('Multiplayer/multiplayer.html')
 
 if __name__ == 'main':
     app.run(debug=True)
