@@ -88,6 +88,7 @@ def game():
             print("Invalid Position")
             continue
         if count == 9:
+            displayBoard(board)
             print('Game draw')
             break
 
