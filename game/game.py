@@ -5,23 +5,31 @@ win = False
 winner = None
 
 def logic(board):
-    global win
+    global win, winner
     if board[0][0] == board[0][1] == board[0][2] != '-':
         win = True
+        winner = board[0][0]
     elif board[1][0] == board[1][1] == board[1][2] != '-':
         win = True
+        winner = board[1][0]
     elif board[2][0] == board[2][1] == board[2][2] != '-':
-       win = True
+        win = True
+        winner = board[2][0]
     elif board[0][0] == board[1][0] == board[2][0] != '-':
         win = True
+        winner = board[0][0]
     elif board[0][1] == board[1][1] == board[2][1] != '-':
         win = True
+        winner = board[0][1]
     elif board[0][2] == board[1][2] == board[2][2] != '-':
         win = True
+        winner = board[0][2]
     elif board[0][0] == board[1][1] == board[2][2] != '-':
         win = True
+        winner = board[0][0]
     elif board[0][2] == board[1][1] == board[2][0] != '-':
         win = True
+        winner = board[0][2]
 
 def displayBoard(board):
     print(f"{board[0][0]}|{board[0][1]}|{board[0][2]}")
@@ -73,7 +81,7 @@ def game():
                 print('Game draw')
 
             if win:
-                print("There is a winner")
+                print(f"{winner} is the winner")
                 displayBoard(board)
                 break
         else:
