@@ -7,6 +7,79 @@
     <title>Player vs Player</title>
 </head>
 <body>
-    You will play by yourself
+
+{% set board = [['-','-','-'],['-','-','-'],['-','-','-']] %}
+{% set win = False %}
+{% set winner = None%}
+
+<p>{{ board }}</p>
+<p>{{ win }}</p>
+<p>{{ winner }}</p>
+
+
+{#THIS IS THE LOGIC // this is also a comment#}
+{%if board[0][0] == board[0][1] == board[0][2] != '-'%}
+win = True
+winner = board[0][0]
+{%elif board[1][0] == board[1][1] == board[1][2] != '-'%}
+win = True
+winner = board[1][0]
+{%elif board[2][0] == board[2][1] == board[2][2] != '-'%}
+win = True
+winner = board[2][0]
+{%elif board[0][0] == board[1][0] == board[2][0] != '-'%}
+win = True
+winner = board[0][0]
+{%elif board[0][1] == board[1][1] == board[2][1] != '-'%}
+win = True
+winner = board[0][1]
+{%elif board[0][2] == board[1][2] == board[2][2] != '-'%}
+win = True
+winner = board[0][2]
+{%elif board[0][0] == board[1][1] == board[2][2] != '-'%}
+win = True
+winner = board[0][0]
+{%elif board[0][2] == board[1][1] == board[2][0] != '-'%}
+win = True
+winner = board[0][2]
+{%endif%}
+
+{#Display the board#}
+<br>{{board[0][0]}} {{'|'}}   {{board[0][1]}}   {{'|'}}  {{board[0][2]}}</br>
+{{'-+-+-'}}
+<br>{{board[1][0]}} {{'|'}}   {{board[1][1]}}   {{'|'}}  {{board[1][2]}}</br>
+{{'-+-+-'}}
+<br>{{board[2][0]}} {{'|'}}   {{board[2][1]}}   {{'|'}}  {{board[2][2]}}</br>
+
+{#display Positions#}
+{#user_choise is the input given so for this situation I will set user_chouse as 0, bcs Idk how to ask for input#}
+{#turn is 'X' and '0' but for this situation i will set it to 'X' so the website dosen't breaks#}
+{#just look at game.py everything will be clear#}
+
+{% set user_choise = 0%}
+{% set turn = 'X'%}
+
+{%if user_choise == 1%} {#idk how to set if user_chouse is 1 here is the problem#}
+board[0][0] = turn
+{%elif user_choise == 2}
+board[0][1] = turn
+{%elif user_choise == 3%}
+board[0][2] = turn
+{%elif user_choise == 4%}
+board[1][0] = turn
+{%elif user_choise == 5%}
+board[1][1] = turn
+{%elif user_choise == 6%}
+board[1][2] = turn
+{%elif user_choise == 7%}
+board[2][0] = turn
+{%elif user_choise == 8%}
+board[2][1] = turn
+{%elif user_choise == 9%}
+board[2][2] = turn
+
+
+{#def game() left xD#}
+
 </body>
 </html>

@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from jinja2 import Template
 
 app = Flask(__name__)
 
@@ -13,7 +14,8 @@ def tutorial():
 
 @app.route('/PVE')
 def PVE():
-    return render_template('PVE/pve.html')
+    #board = [['-','-','-'],['-','-','-'],['-','-','-']]
+    return render_template('PVE/pve.html', board='Hey')
 
 @app.route('/PVP')
 def PVP():
