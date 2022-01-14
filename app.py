@@ -13,9 +13,10 @@ def tutorial():
     return render_template('Tutorial/tutorial.html') 
 
 @app.route('/PVE')
-def PVE():
-    #board = [['-','-','-'],['-','-','-'],['-','-','-']]
-    return render_template('PVE/pve.html', board='Hey')
+def PVE(board,winner,win,):
+    board = [['-','-','-'],['-','-','-'],['-','-','-']]
+
+    return render_template('PVE/pve.html')
 
 @app.route('/PVP')
 def PVP():
