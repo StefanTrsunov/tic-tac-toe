@@ -3,6 +3,8 @@ Building a website where you can play TIC TAC TOE with your friends
 
 
 ### Starting up the app for the first time
+Creating the env file:
+$ virtualenv env
 
 activate the env file:
 $ source env/bin/activate
