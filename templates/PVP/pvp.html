@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player vs Player</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-{% macro displayBoard(board) %}
-{% set board = [['-','-','-'],['-','-','-'],['-','-','-']] %}
 
-    <br>{{board[0][0]}} {{'|'}} {{board[0][1]}} {{'|'}} {{board[0][2]}}</br>
-    {{'-+-+-'}}
-    <br>{{board[1][0]}} {{'|'}} {{board[1][1]}} {{'|'}} {{board[1][2]}}</br>
-    {{'-+-+-'}}
-    <br>{{board[2][0]}} {{'|'}} {{board[2][1]}} {{'|'}} {{board[2][2]}}</br>
-
-{% endmacro %}
-
-    {{displayBoard(board)}}
+    <table>
+        <tr>
+            <td class="td"></td>
+            <td class="td"></td>
+            <td class="td"></td>
+        </tr>
+        <tr>
+            <td class="td"></td>
+            <td class="td"></td>
+            <td class="td"></td>
+        </tr>
+        <tr>
+            <td class="td"></td>
+            <td class="td"></td>
+            <td class="td"></td>
+        </tr>
+    </table>
 </body>
 </html>
